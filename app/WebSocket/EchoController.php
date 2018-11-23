@@ -50,5 +50,7 @@ class EchoController implements HandlerInterface
     public function onClose(Server $server, int $fd)
     {
         // do something. eg. record log, unbind user ...
+        $server->push($fd, 'ooo, goodbye! :)');
+//        $server->push($fd,'bye!');
     }
 }

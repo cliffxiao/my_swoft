@@ -27,6 +27,18 @@ use Swoft\Task\Task;
  */
 class TestCommand
 {
+    /*
+     * 命令帮助信息是命令使用说明信息，也是通过注解完成定义。
+
+        类描述，对应命令组信息描述
+        方法描述，对应该执行命令的信息描述
+        @Usage 定义使用命令格式
+        @Options 定义命令选项参数
+        @Arguments 定义命令参数
+        @Example 命令使用例子
+     *
+     *
+     */
     /**
      * this test command
      *
